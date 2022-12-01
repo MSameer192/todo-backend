@@ -10,7 +10,7 @@ module.exports = router;
 
 
 router.post('/todo', async (req, res) => {
-    const data = new Model({
+    const data = new Model({    
         task: req.body.task,
     })
 
