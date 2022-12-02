@@ -3,9 +3,11 @@
 require('dotenv').config();
 const express = require('express');
 const mongoose = require('mongoose');
-const app = express();
 const cors = require('cors')
 
+const app = express();
+
+app.use(cors());
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -50,7 +52,6 @@ app.listen(3000, () => {
 
 // ========================== END DB & SERVER CONNCENTION CODE 
 
-app.use(cors());
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
